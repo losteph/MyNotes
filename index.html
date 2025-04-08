@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Books (losteph)</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
+    <script>
+        async function loadReadme() {
+            const response = await fetch("README.md");
+            const text = await response.text();
+            const converter = new showdown.Converter();
+            document.getElementById("readme").innerHTML = converter.makeHtml(text);
+        }
+    </script>
+</head>
+    <h1>My Notes</h1>
+    All my university note in one place. I'm a Master's student in Cyber-Physical Systems at PoliBa. The majority of these files are written in Italian.
+
+     <hr>
+    
+    <h2>Disclaimer</h2>
+    I do NOT own most of the Figure used in my classes transcribed notes. I make all my work available for free (I don't make profit by using these pictures). These books will be helpful for everyone following the same course. I don't know the sources, I just followed the lessons and put every picture of the class slides.
+    
+    <ul>
+        <li><a href="I%20year/Dynamical%20System%20Theory/Formulario_DST_Stefano_Di_Lena.pdf" download>Dynamical System Theory</a></li>
+        <li><a href="primo_anno/file.pdf" download>Estimation and Control of Dynamical System</a></li>
+        <li><a href="versioniML.html"<button>Foundation of Machine Learning</button></a></li>
+        <li><a href="primo_anno/file.pdf" download>Agent Based Artificial Intelligent</a></li>
+        <li><a href="I%20year/Internet%20of%20Things/IoT_Stefano_Di_Lena.pdf" download>Internet of Things</a></li>
+        <li><a href="primo_anno/file.pdf" download>Digital Business</a></li>
+        
+        <li><a href="secondo_anno/file.pdf" download>Electric Drives</a></li>
+        <li><a href="secondo_anno/file.pdf" download>Robotics</a></li>
+        <li><a href="secondo_anno/file.pdf" download>Data Model Identification and Intelligent Control</a></li>
+        <li><a href="secondo_anno/file.pdf" download>Model Predictive Control</a></li>
+    </ul>
+
+    <hr>
+</body>
+</html>
