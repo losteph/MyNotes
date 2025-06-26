@@ -1,0 +1,24 @@
+set J := C1, C2, C3, C4, C5;
+
+param costoCostruzione :=
+1 10000
+2 15000
+3 13000;
+
+param capacitàMax :=
+1 180
+2 230
+3 500;
+
+param richiesta :=
+C1 91
+C2 170
+C3 135
+C4 153
+C5 110;
+
+param costoTrasporto : 
+	C1 C2 C3 C4 C5 :=
+1	15 13 27  9  7
+2	12 21 34 21  3
+3	 7 10  2 17 12;
