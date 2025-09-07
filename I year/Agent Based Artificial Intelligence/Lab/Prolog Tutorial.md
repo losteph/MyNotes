@@ -2,13 +2,13 @@
 
 ## Basics
 Per avviare SWI-Prolog da terminale, usando VScode con relativa estensione, 
-bisogna assicurarsi di essere nella cartella in cui è situato il programma "***.pl" ("***": nome del programma da runnare), 
+bisogna assicurarsi di essere nella cartella in cui è situato il programma "name.pl" ("name": nome del programma da runnare), 
 e digitare su terminale bash:
 swipl
 
 Dopo di che bisogna caricare il programma, per farlo abbiamo due metodi:
-?- consult("***.pl").
-?- [***].
+?- consult("name.pl").
+?- \[name\].
 
 Poi è possibile eseguire tutte le query necessarie a seconda del programma.
 Se abbiamo più soluzioni, dopo aver ottenuta la prima basta digitare ; per ottenere le altre (1 alla volta).
@@ -38,11 +38,11 @@ nl serve per andare a capo
 
 ---
 
-scrivere \+ è uguale a verificare se qualcosa è diverso
+scrivere \\+ è uguale a verificare se qualcosa è diverso
 questo invece per vedere se l'uguaglianza è verificata =:=
 invece se non è verificata =\=
 
-mod(_,_) da il modulo degli argomenti
+mod(\_,\_) da il modulo degli argomenti
 
 con is assegni un valore ad una variabile
 
@@ -70,9 +70,9 @@ il cut è ! serve a porre fine al backtracking
 length() ti da la lunghezza di qualcosa che metti come imput (solitamente una lista)
 
 
-[H|T] = [a, b, c] restituisce come output
+\[H|T\] = \[a, b, c\] restituisce come output
 H = a 
-T = [b, c]
+T = \[b, c\]
 
 member serve a verificare se un elemento è presente in una lista
 
