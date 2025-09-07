@@ -28,7 +28,7 @@ Per disattivarlo:
 Le constanti in prolog vengono scritte in minuscolo mentre le variabili scritte con lettere maiuscole (o almento l'iniziale grande).
 
 quando vediamo il simbolo :- ci stiamo riferendo ad una regola, ad esempio:
-a :- b vuol dire che "$b \implies a$"
+a :- b vuol dire che "[b \implies a]"
 
 quando vediamo il simbolo , dopo un predicato si riferisce all' AND logico
 l'or logico si può effettuare mettendo dopo i predicati il . e scriverli quindi come predicati a parte oppure usare il ; tra due predicati
