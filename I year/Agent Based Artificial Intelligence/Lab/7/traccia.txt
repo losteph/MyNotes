@@ -1,0 +1,4 @@
+Un chimico deve sistemare 4 pozioni colorate in un ordine specifico: Rosso (R), Verde (V), Blu (B), Giallo (G).
+Le pozioni inizialmente si trovano in un ordine casuale, e l’unica operazione consentita è lo scambio (swap) tra due pozioni adiacenti.
+Progettare un algoritmo basato su ricerca su grafo (graph search) per trovare la sequenza minima di operazioni che porta all’ordinamento corretto.
+Utilizzare una funzione euristica per ottimizzare la ricerca
