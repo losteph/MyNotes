@@ -83,6 +83,7 @@ class Hanoi:
     def cost(self, state, action):
         return 1
 
+    """
     def heuristic(self, state):
         # numero di dischi non nella posizione finale (euristica semplice)
         misplaced = 0
@@ -90,3 +91,7 @@ class Hanoi:
             for disk in state[rod_idx]:
                 misplaced += 1
         return misplaced
+    """
+
+    def heuristic(self, state):
+        return len(state[0]) + len(state[1]) # Stima: quanti dischi NON sono sull'asta C (indice 2)
