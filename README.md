@@ -11,7 +11,7 @@ I do NOT own most of the Figure used in my classes transcribed notes. I make all
 Il lavoro originale di rielaborazione, organizzazione e trascrizione (sbobinatura) presente in questa repository è distribuito con Licenza
 [Creative Commons Attribuzione - Non commerciale - Condividi allo stesso modo 4.0 Internazionale (CC BY-NC-SA 4.0)](http://creativecommons.org/licenses/by-nc-sa/4.0/).
 
-#### Disclaimer sul Copyright di Terze Parti
+### Disclaimer sul Copyright di Terze Parti
 
 Questa licenza si applica **esclusivamente** al contributo originale dell'autore (l'organizzazione, la trascrizione delle lezioni e i commenti personali).
 
