@@ -1,5 +1,5 @@
 # My Notes
-All my university note in one place. I'm a Master's student in Cyber-Physical Systems at PoliBa. The majority of these files are written in Italian.
+All my university note in one place. I'm a Master's student in Cyber-Physical Systems at Politecnico di Bari. The majority of these files are written in Italian.
 
 ---
 ### ⚠️ Disclaimer
