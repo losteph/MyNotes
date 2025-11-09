@@ -25,5 +25,3 @@ La stesura di questi appunti è basata principalmente sulle lezioni e le sbobina
 * ***Artificial Intelligence: A Modern Approach (3rd ed.)***, di Russel & Norvig (Prentice Hall, 1995), [link](https://people.engr.tamu.edu/guni/csce625/slides/AI.pdf).
 * ***An Introduction to Statistical Learning***, di James, Witten, Hastie, Tibishirani, Taylor (Springer, 2013), [link](https://www.statlearning.com/).
 
----
-https://losteph.github.io/MyNotes/
