@@ -1,4 +1,4 @@
-%% LAB 7a: Adaptive Feedback Linearization (Sistema 1° Ordine)
+%% LAB 7: Adaptive Feedback Linearization (Sistema 1° Ordine)
 %  ==============================================================
 
 clear all
