@@ -6,16 +6,12 @@ esami = [
     {"nome": "Estimation and Control of Dynamical Systems", "voto": 27, "cfu": 6},
     {"nome": "Digital Business", "voto": 26, "cfu": 6},
     {"nome": "Optimization and Control", "voto": 25, "cfu": 6},
-
-
-    {"nome": "Artificial Intelligence and Machine Learning", "voto": 19, "cfu": 3}, #sarebbero 12 cfu ma tolgo i 9cfu più bassi
-    {"nome": "Embedded Control", "voto": 24, "cfu": 6},
-  
-
-    {"nome": "Electric Drives", "voto": 19, "cfu": 12},
-    {"nome": "Data Model Identification and Intelligent Control", "voto": 30, "cfu": 6},
-    {"nome": "Robotics", "voto": 24, "cfu": 12},
-    {"nome": "Model Predictive Control", "voto": 25, "cfu": 6},
+    {"nome": "Artificial Intelligence and Machine Learning", "voto": 25, "cfu": 12}, 
+    {"nome": "Embedded Control", "voto": 29, "cfu": 6},
+    {"nome": "Electric Drives", "voto": 24, "cfu": 12},
+    {"nome": "Data Model Identification and Intelligent Control", "voto": 28, "cfu": 6},
+    {"nome": "Robotics", "voto": 23, "cfu": 12}, #sarebbero 12 cfu ma tolgo i 9cfu più bassi
+    {"nome": "Model Predictive Control", "voto": 27, "cfu": 6},
 ]
 
 def media(esami):
