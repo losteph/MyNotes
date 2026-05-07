@@ -24,16 +24,17 @@ Per poi controllare la tartaruga creata nel simulatore bisogna eseguire da un al
 
 ---
 
-Altri comando visti:
+Altri comandi visti:
 
- `ros2 node list`
- `ros2 node info /turtlesim`
- `ros2 topic list`
- `ros2 topic echo /turtle1/pose`
- `ros2 topic pub /turtle1/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 2.0}, angular: {z: 1.0}}"`
-`ros2 service list`
+* `ros2 node list`
+*  `ros2 node info /turtlesim`
+* `ros2 topic list`
+* `ros2 topic echo /turtle1/pose`
+* `ros2 topic pub /turtle1/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 2.0}, angular: {z: 1.0}}"`
+* `ros2 service list`
 
  Per spawnare una nuova tartaruga:
- `ros2 service call /spawn turtlesim/srv/Spawn "{x: 2.0, y: 2.0, theta: 0.0, name: 'turtle2'}"`
+ * `ros2 service call /spawn turtlesim/srv/Spawn "{x: 2.0, y: 2.0, theta: 0.0, name: 'turtle2'}"`
+ 
  Per eliminare una tartaruga:
- `ros2 service call /kill turtlesim/srv/Kill "{name: 'turtle1'}"`
+ * `ros2 service call /kill turtlesim/srv/Kill "{name: 'turtle1'}"`
