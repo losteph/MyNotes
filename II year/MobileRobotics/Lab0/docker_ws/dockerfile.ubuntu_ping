@@ -1,0 +1,6 @@
+FROM ubuntu:latest 
+RUN apt update && apt install -y iputils-ping
+#RUN apt update && apt install -y wget
+
+# aprendo il terminale poi (se la cartella sta su windows) 
+# poi devo scrivere su terminale: wsl      --> (per aprire linux).

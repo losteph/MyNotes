@@ -1,0 +1,9 @@
+FROM ros:humble
+
+RUN apt update && apt install -y \
+    ros-humble-turtlesim* \
+    ros-humble-rqt-graph \
+    ros-humble-example-interfaces \
+    wget \
+ && rm -rf /var/lib/apt/lists/*
+ 
