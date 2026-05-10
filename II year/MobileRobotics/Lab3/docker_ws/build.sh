@@ -1,0 +1,1 @@
+docker build --rm -t ros:lab1 -f Dockerfile.lab1 .
