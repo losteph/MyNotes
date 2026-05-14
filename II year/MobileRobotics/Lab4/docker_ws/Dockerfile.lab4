@@ -1,0 +1,9 @@
+FROM ros:jazzy
+RUN apt update -y && apt install -y \
+    ros-jazzy-turtlesim \
+    ros-jazzy-rqt-graph \
+    ros-jazzy-rviz2 \
+    ros-jazzy-turtle-tf2-py \
+    ros-jazzy-tf2-ros \
+    ros-jazzy-tf2-tools \
+    wget

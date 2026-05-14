@@ -1,0 +1,1 @@
+docker exec -it lab4 bash
