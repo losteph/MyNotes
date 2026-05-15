@@ -22,6 +22,11 @@ Per avviare turtlesim si usa  `ros2 run turtlesim turtlesim_node`.
 
 Per poi controllare la tartaruga creata nel simulatore bisogna eseguire da un altro terminale  `ros2 run turtlesim turtle_teleop_key`.
 
+Per fare delle traiettorie già pre impostate esistono dei nodi di esempio nel pacchetto turtlesim (quadrato, cerchio):
+```
+ros2 run turtlesim draw_square
+ros2 topic pub /turtle1/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 1.8}}"
+```
 ---
 
 Altri comandi visti:
