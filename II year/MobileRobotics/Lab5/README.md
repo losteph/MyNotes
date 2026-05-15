@@ -26,7 +26,7 @@ Sono stati sviluppati diversi modelli incrementali per comprendere:
 Come ormai sappiamo, dopo aver fatto il `./build.sh` ed il `./run.sh` (assicurandosi che ros funzioni tramite `source opt/ros/jazzy/setup.bash`) poi possiamo spostarci a fare il `colcon build` dentro `/root/ros_workspace` (ed effettuare `source install/setup.bash`).
 
 Poi i nuovi comandi per lanciare il robot saranno:
-- `ros2 launch urdf_lab demo_launch.py`
+- `ros2 launch urdf_lab display.launch.py [model]`
 - oppure `ros2 run root_state_publisher state_publisher <file.urdf>` per testare un singolo URDF.
 
 ---
