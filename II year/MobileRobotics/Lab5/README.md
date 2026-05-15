@@ -16,10 +16,10 @@ Sono stati sviluppati diversi modelli incrementali per comprendere:
 - `origins` uso di trasformazioni (xyz e rpy)
 - `materials` introduzione dei colori
 - `visual` robot completo con ruote e gripper
-- `flexible`
-- `physics`
-- `maroed`
-- `r2d2`
+- `flexible` aggiunta joint reali (_continous_: rotazione infinta ruote, _revolute_: rotazione limitata gripper, _prismatic_: movimento lineare)
+- `physics` aggiunta di collisioni, massa ed inerzia (servirà per una simulazione realistica in Gazebo)
+- `macroed` versione intelligente del robot
+- `r2d2` robot completo (stile Star Wars)
 
 ---
 
