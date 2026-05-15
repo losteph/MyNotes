@@ -1,0 +1,8 @@
+FROM ros:jazzy
+RUN apt update -y && apt install -y ros-jazzy-turtlesim* 
+RUN apt update -y && apt install -y ros-jazzy-rqt-graph
+RUN apt update -y && apt install -y wget
+RUN apt update -y && apt install -y ros-jazzy-urdf-tutorial
+RUN apt update -y && apt install -y liburdfdom-tools
+# install gazebo
+RUN apt update -y && apt install -y ros-jazzy-ros-gz
