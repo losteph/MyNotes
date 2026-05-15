@@ -1,0 +1,29 @@
+FROM ros:jazzy
+RUN apt update -y && apt install ros-jazzy-turtlesim* -y
+RUN apt update -y && apt install -y ros-jazzy-rqt-graph
+RUN apt update -y && apt install -y wget
+RUN apt update -y && apt install -y ros-jazzy-urdf-tutorial
+RUN apt update -y && apt install -y liburdfdom-tools
+# install gazebo
+RUN apt update -y && apt install -y ros-jazzy-ros-gz
+# install navigation stuff
+RUN apt update -y && apt install -y ros-jazzy-navigation2 \
+ ros-jazzy-nav2-bringup ros-jazzy-cartographer \
+  ros-jazzy-cartographer-ros
+
+WORKDIR /root/ros_workspace
+RUN sudo apt install python3-colcon-common-extensions
+RUN sudo apt install ros-jazzy-test-msgs
+### install in the workspace to be able to modify params
+#WORKDIR /root/ros_workspace/src
+#RUN git clone -b jazzy https://github.com/ros-navigation/navigation2.git
+
+
+# WORKDIR /root/ros_workspace/src
+#RUN git clone -b jazzy https://github.com/ROBOTIS-GIT/DynamixelSDK.git
+#RUN git clone -b jazzy https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
+#RUN git clone -b jazzy https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+#RUN git clone -b jazzy https://github.com/ROBOTIS-GIT/turtlebot3.git
+#WORKDIR /root/turtlebot_ws
+
+

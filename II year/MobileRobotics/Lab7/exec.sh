@@ -1,0 +1,1 @@
+docker exec -it lab7 bash
