@@ -1,0 +1,5 @@
+FROM ros:jazzy
+RUN apt update -y && apt install ros-jazzy-turtlesim* -y
+RUN apt update -y && apt install -y ros-jazzy-rqt-graph
+RUN apt update -y && apt install -y wget
+RUN apt update -y && apt install -y ros-jazzy-urdf-tutorial
