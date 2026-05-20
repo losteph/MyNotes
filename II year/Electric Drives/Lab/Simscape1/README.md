@@ -135,9 +135,11 @@ per gli altri blocchi come Lsq e Lsd prendiamo i Constant e gli sostituiamo dent
 
 Per $\psi_{PM}$ prendiamo sempre un blocco constant è sciviamo Psim è lo moltiplichiamo per un Gain contenente:
 
-<img width="572" height="417" alt="image" src="https://github.com/user-attachments/assets/e35323b3-1b8a-47ae-9982-70d749b4dd29" />
+<img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/e35323b3-1b8a-47ae-9982-70d749b4dd29" />
 
 perché dipende varia con la temperatura.
+
+
 
 ---
 
