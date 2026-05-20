@@ -44,7 +44,7 @@ andiamo a modificare il grandino esistente come segue:
 
 il valore viene moltiplicato per $60/2 \pi$ perché è riportato da rad/sec in RPM.
 
-Aggiungiamo poi un ulteriore blocco step per rappresentare il riferimento ($t = 0.2$ a 700):
+Aggiungiamo poi un ulteriore blocco Step per rappresentare il riferimento ($t = 0.2$ a 700):
 
 <img width="900" height="388" alt="image" src="https://github.com/user-attachments/assets/7150b7b8-bbca-4e12-bc40-ef3084a2ea8b" />
 
@@ -81,6 +81,16 @@ che il perido di una corrente di fase (ogni corrente di fase ha lo stesso period
 <img width="1100" height="626" alt="image" src="https://github.com/user-attachments/assets/b059d3bc-7f66-4988-8462-ba805baa0cad" />
 
 Vedendo la velocità meccanica del rotore notiamo che è pari a $700rad/s$, ma questo è normale, perchè sappiamo che la velocità elettrica è pari a quella meccanica per $n_p$ (numero di paia di poli), quindi per visualizzare correttamente quella elettrica avrei dovuto aggiungere un blocco Gain con dentro $n_p$.
+
+Il prossimo passo è aggiungere un blocco Scope per visualizzare l'asse q (l'asse d è 0):
+
+<img width="271" height="215" alt="image" src="https://github.com/user-attachments/assets/a2cc8442-e4bf-4099-8e3c-272f98924484" />
+
+ed otteniamo:
+
+<img width="1433" height="917" alt="image" src="https://github.com/user-attachments/assets/11bda961-c601-45a5-b421-79cfb3c22619" />
+
+notiamo quindi che la corrente $i_q \approx 8A$ e (riprendendo l'immagine delle correnti di fase) notiamo che l'ampiezza delle sinusoidi anche era 8.
 
 ---
 
