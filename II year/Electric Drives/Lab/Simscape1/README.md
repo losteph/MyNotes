@@ -44,7 +44,7 @@ andiamo a modificare il grandino esistente come segue:
 
 il valore viene moltiplicato per $60/2 \pi$ perché è riportato da rad/sec in RPM.
 
-Aggiungiamo poi un ulteriore blocco step per rappresentare il riferimento ($t = 0.2 a 700)$:
+Aggiungiamo poi un ulteriore blocco step per rappresentare il riferimento ($t = 0.2$ a 700):
 
 <img width="900" height="388" alt="image" src="https://github.com/user-attachments/assets/7150b7b8-bbca-4e12-bc40-ef3084a2ea8b" />
 
@@ -63,6 +63,28 @@ Qua adesso quindi mettiamo due blocchi gradino:
 <img width="631" height="376" alt="image" src="https://github.com/user-attachments/assets/69bc5c86-c4ba-4119-ab09-d1dd238996f5" />
 
 Nel primo impostiamo lo Step time 0.12 ed il Final value a 0.2; nel secondo impostiamo Step time 0.32 e Final value a 0.4 (perché per lo stesso ragionamento di prima, avendo già 0.2 mancano solo 0.4 per arrivare ad un totale di 0.6).
+
+Questo blocco con la "i" apre tutti gli schemi di Sensing Current:
+
+<img width="277" height="193" alt="image" src="https://github.com/user-attachments/assets/936619b8-9873-485f-9310-94a0c5dd29ca" />
+
+Dentro questo schema dobbiamo aggiungere uno scope per visualizzare le correnti di fase così facendo:
+
+<img width="1007" height="522" alt="image" src="https://github.com/user-attachments/assets/a9b8d65a-e9ac-42ab-b0b0-f82bd24fa3ea" />
+
+Troviamo aprendolo:
+
+<img width="1917" height="1013" alt="image" src="https://github.com/user-attachments/assets/3aec29b4-0c8a-4188-bf0d-982ab788c769" />
+
+che il perido di una corrente di fase (ogni corrente di fase ha lo stesso periodo ne prendiamo una campione), troviamo un valore di $T_c=0.0045s$ quindi facendo l'inversa troviamo unfa frequenza $f=222Hz$ che moltiplicata per $2 \pi$ otteniamo $\omega = 1395.5 rad/s$. 
+
+<img width="1100" height="626" alt="image" src="https://github.com/user-attachments/assets/b059d3bc-7f66-4988-8462-ba805baa0cad" />
+
+Vedendo la velocità meccanica del rotore:
+
+<img width="1100" height="626" alt="image" src="https://github.com/user-attachments/assets/0a27167d-2462-418e-a56a-33ef5b36e178" />
+
+notiamo che è pari a $700rad/s$, ma questo è normale, perchè sappiamo che la velocità elettrica è pari a quella meccanica per $n_p$ (numero di paia di poli), quindi per visualizzare correttamente quella elettrica avrei dovuto aggiungere un blocco Gain con dentro $n_p$.
 
 ---
 
