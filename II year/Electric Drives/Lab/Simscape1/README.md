@@ -30,6 +30,21 @@ Calcolare l'efficienza (potenza meccanica trasferita al carico diviso la potenza
 
 ## Svolgimento 1
 
+Dopo aver scaricato tutti i file, servirà aprire solamente `Script_caricamento_dati_simscape1.m` e `Simscape1.mdl`.
+
+Dobbiamo modificare le temperature dallo script Matlab per avere come richiesto: `Trotor=50;` e `Tphase=75;`.
+
+Impostiamo il riferimento di velocità ($t = 0$ a 314) dal Simulink, dal blocco:
+
+<img width="163" height="102" alt="image" src="https://github.com/user-attachments/assets/77b73eca-3c68-4905-831c-f26f0d58a1c6" />
+
+andiamo a modificare il grandino esistente come segue:
+
+<img width="712" height="557" alt="image" src="https://github.com/user-attachments/assets/be146c9e-0d5a-40f1-96ea-13637b349930" />
+
+il valore viene moltiplicato per $60/2 \pi$ perché è riportato da rad/sec in RPM.
+
+
 ---
 
 ## Esercitazion 2
