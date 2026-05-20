@@ -36,14 +36,33 @@ Dobbiamo modificare le temperature dallo script Matlab per avere come richiesto:
 
 Impostiamo il riferimento di velocità ($t = 0$ a 314) dal Simulink, dal blocco:
 
-<img width="163" height="102" alt="image" src="https://github.com/user-attachments/assets/77b73eca-3c68-4905-831c-f26f0d58a1c6" />
+<img width="170" height="110" alt="image" src="https://github.com/user-attachments/assets/77b73eca-3c68-4905-831c-f26f0d58a1c6" />
 
 andiamo a modificare il grandino esistente come segue:
 
-<img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/be146c9e-0d5a-40f1-96ea-13637b349930" />
+<img width="600" height="300" alt="image" src="https://github.com/user-attachments/assets/be146c9e-0d5a-40f1-96ea-13637b349930" />
 
 il valore viene moltiplicato per $60/2 \pi$ perché è riportato da rad/sec in RPM.
 
+Aggiungiamo poi un ulteriore blocco step per rappresentare il riferimento ($t = 0.2 a 700)$:
+
+<img width="900" height="388" alt="image" src="https://github.com/user-attachments/assets/7150b7b8-bbca-4e12-bc40-ef3084a2ea8b" />
+
+Quindi:
+
+<img width="600" height="300" alt="image" src="https://github.com/user-attachments/assets/7f4ca0a5-7c5e-473b-b6b3-81b85e418b8b" />
+
+In questo caso facciamo $(700-314)/ 2 \pi$ perché avevamo già 314 all'istante iniziale e dobbiamo aggiungere solo i restanti per arrivate come velocità totale a 700.
+
+Modifichiamo poi la coppia di carica lavorando su questo blocco:
+
+<img width="300" height="130" alt="image" src="https://github.com/user-attachments/assets/db01b17e-8367-44e5-84a3-bbd628b05cd0" />
+
+Qua adesso quindi mettiamo due blocchi gradino:
+
+<img width="631" height="376" alt="image" src="https://github.com/user-attachments/assets/69bc5c86-c4ba-4119-ab09-d1dd238996f5" />
+
+Nel primo impostiamo lo Step time 0.12 ed il Final value a 0.2; nel secondo impostiamo Step time 0.32 e Final value a 0.4 (perché per lo stesso ragionamento di prima, avendo già 0.2 mancano solo 0.4 per arrivare ad un totale di 0.6).
 
 ---
 
