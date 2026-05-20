@@ -80,11 +80,7 @@ che il perido di una corrente di fase (ogni corrente di fase ha lo stesso period
 
 <img width="1100" height="626" alt="image" src="https://github.com/user-attachments/assets/b059d3bc-7f66-4988-8462-ba805baa0cad" />
 
-Vedendo la velocità meccanica del rotore:
-
-<img width="1100" height="626" alt="image" src="https://github.com/user-attachments/assets/0a27167d-2462-418e-a56a-33ef5b36e178" />
-
-notiamo che è pari a $700rad/s$, ma questo è normale, perchè sappiamo che la velocità elettrica è pari a quella meccanica per $n_p$ (numero di paia di poli), quindi per visualizzare correttamente quella elettrica avrei dovuto aggiungere un blocco Gain con dentro $n_p$.
+Vedendo la velocità meccanica del rotore notiamo che è pari a $700rad/s$, ma questo è normale, perchè sappiamo che la velocità elettrica è pari a quella meccanica per $n_p$ (numero di paia di poli), quindi per visualizzare correttamente quella elettrica avrei dovuto aggiungere un blocco Gain con dentro $n_p$.
 
 ---
 
