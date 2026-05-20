@@ -18,7 +18,7 @@ Confrontare la velocità elettrica del rotore e la pulsazione delle correnti di 
 
 Confrontare le correnti di fase e quelle dq a regime, verificando che il modulo delle correnti dq sia uguale all'ampiezza delle correnti di fase.
 
-Verificare che le equazioni elettriche dq siano soddisfatte a regime a 700 rad/s e carico 0.7 Nm. Usando i valori dei parametri tenendo conto delle variazioni parametriche e per la verifica 
+Verificare che le equazioni elettriche dq siano soddisfatte a regime a 700 rad/s e carico 0.6 Nm. Usando i valori dei parametri tenendo conto delle variazioni parametriche e per la verifica 
 
 Calcolare la potenza attiva, le perdite e la potenza meccanica totale a regime a 314 rad/s e 0.2 Nm. Verificare che la potenza meccanica è pari alla potenza attiva meno le perdite per effetto Joule: 
 
@@ -95,9 +95,28 @@ notiamo quindi che la corrente $i_q \approx 8A$ e (riprendendo l'immagine delle 
 Le due equazioni elettriche a regime i d-q sono:
 
 $$
-v_{sd} = R_s i_{sd} - \omega_r L_q i_{sq} \\
+v_{sd} = R_s i_{sd} - \omega_r L_q i_{sq} 
+$$
+$$
 v_{sq} = R_s i_{sq} + \omega_r L_d i_{sd} + \omega_r \psi_{PM}
 $$
+
+e dobbiamo creare queste due equazioni su simulink e verificare :
+
+<img width="1218" height="710" alt="image" src="https://github.com/user-attachments/assets/7f5fbdbc-ddc4-4bba-a197-44f4bfb80b10" />
+
+Zoomiamo meglio sui collegamenti:
+
+<img width="612" height="611" alt="image" src="https://github.com/user-attachments/assets/0d399208-e53f-4337-91f1-23c4727ba4fc" />
+
+I risultati che otteniamo per l'asse d sono:
+
+<img width="1432" height="882" alt="image" src="https://github.com/user-attachments/assets/fb18d1e3-be31-4651-91bd-1f3d1b303bb5" />
+
+per l'asse q:
+
+<img width="1517" height="888" alt="image" src="https://github.com/user-attachments/assets/be5182f8-d81f-4a09-97cf-09f8a32d0323" />
+
 
 ---
 
