@@ -40,7 +40,7 @@ Impostiamo il riferimento di velocità ($t = 0$ a 314) dal Simulink, dal blocco:
 
 andiamo a modificare il grandino esistente come segue:
 
-<img width="712" height="557" alt="image" src="https://github.com/user-attachments/assets/be146c9e-0d5a-40f1-96ea-13637b349930" />
+<img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/be146c9e-0d5a-40f1-96ea-13637b349930" />
 
 il valore viene moltiplicato per $60/2 \pi$ perché è riportato da rad/sec in RPM.
 
