@@ -90,7 +90,14 @@ ed otteniamo:
 
 <img width="1433" height="917" alt="image" src="https://github.com/user-attachments/assets/11bda961-c601-45a5-b421-79cfb3c22619" />
 
-notiamo quindi che la corrente $i_q \approx 8A$ e (riprendendo l'immagine delle correnti di fase) notiamo che l'ampiezza delle sinusoidi anche era 8.
+notiamo quindi che la corrente $i_q \approx 8A$ e (riprendendo l'immagine delle correnti di fase) notiamo che l'ampiezza delle sinusoidi anche era 8. Quindi la trasformazione è conservqativa rispetto alle ampiezze.
+
+Le due equazioni elettriche a regime i d-q sono:
+
+$$
+v_{sd} = R_s i_{sd} - \omega_r L_q i_{sq} \\
+v_{sq} = R_s i_{sq} + \omega_r L_d i_{sd} + \omega_r \psi_{PM}
+$$
 
 ---
 
