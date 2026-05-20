@@ -117,6 +117,27 @@ per l'asse q:
 
 <img width="1517" height="888" alt="image" src="https://github.com/user-attachments/assets/be5182f8-d81f-4a09-97cf-09f8a32d0323" />
 
+ACCORTEZZE:
+
+Abbiamo preso la Rs_tot da Variable Resistance
+
+<img width="1657" height="677" alt="image" src="https://github.com/user-attachments/assets/45e9b4e4-b06c-4e36-92e1-000dd4c53f5b" />
+
+che troviamo in questo blocco:
+
+<img width="590" height="387" alt="image" src="https://github.com/user-attachments/assets/f5bf8670-cd85-4188-b4a4-621e39b65bf1" />
+
+la wr la prendiamo da qua:
+
+<img width="366" height="342" alt="image" src="https://github.com/user-attachments/assets/13366215-ef9c-4ec3-b03f-0ffd711b9e7d" />
+
+per gli altri blocchi come Lsq e Lsd prendiamo i Constant e gli sostituiamo dentro il valore (NON usiamo i workspace perchè altrimenti da errori di timeseries). Le moltiplicazioni vanno fatte a due a due se no si bugga, non so perchè.
+
+Per $\psi_{PM}$ prendiamo sempre un blocco constant è sciviamo Psim è lo moltiplichiamo per un Gain contenente:
+
+<img width="572" height="417" alt="image" src="https://github.com/user-attachments/assets/e35323b3-1b8a-47ae-9982-70d749b4dd29" />
+
+perché dipende varia con la temperatura.
 
 ---
 
