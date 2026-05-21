@@ -143,28 +143,23 @@ Il prossimo passo è calcolare:
 - __potenza attiva__ (potenza eletrica in ingresso): $P_{in} = \frac{3}{2} (v_{sd}i_{sd} + v_{sq}i_{sq}$
 - __perdite elettriche__ $P_{joule} = \frac{3}{2} (i_{sd}^2 + i_{sq}^2)$
 - __potenza meccanica__ $P_m = Kc i_{sq} \omega_r / n_p$
+- _L'efficienza elettrica_ (rendimento della conversione elettromeccanica dell'energia) $\eta_ele = P_{out} / P_{in}$ 
 
-Lo si può fare tramite codice Matlab come segue:
-```
-Pm = Kc * IqMis_no_err * wRotor / np;
-P_joule =;
-P_in =;
-Verifica = P_in - P_joule;
-```
+(Queste richieste sono solo per il tratto a 314rad/s e con carico 0.2Nm, quindi possiamo rimuovere volendo gli altri step che abbiamo usato per aumentare la velocità ed il carico).
 
-Per il calcolo dell'efficienza $\eta = P_{out} / P_{in}$ abbiamo bisogno di calcolare la _potenza meccanica in uscita_ come $P = C_r \omega_r / n_p$.
+Ho svolto queste ultime richieste in Simulink come segue:
 
-Oppure il rendimento può essere espresso direttamente come:
+<img width="1577" height="725" alt="image" src="https://github.com/user-attachments/assets/1d5eeb1c-6cfa-4168-89f5-3dcde9096b1c" />
 
-$$
-\eta = \frac{\omega_r (K_c i_{sq} - B \omega_r /n_p)/n_p}{K_c i_sq \omega_r / n_p + \frac{3}{2} R_s (i_{sd}^2 + i_{sq}^2)}
-$$
+Queste modifiche le abbiamo fatte all'interno del SubSystem Variable:
 
-Quindi:
-```
-P_out = Cr * (wr /np);
-Efficienza = P_out / P_in;
-```
+<img width="298" height="230" alt="image" src="https://github.com/user-attachments/assets/1f627ee1-8e29-4107-8ea5-be7ac80828e3" />
+
+Abbiamo usato i blocchi: product, divide, square, constant, gain, from, sum, per comporre le varie equazioni teoriche e plottarle poi in degli scope (per confrontare e verificare che potenza meccanica e potenza elettrica al meno delle perdite sono uguali, abbiamo plottato tramite un mux entrambi i grafici in un unico plot e risultano simili).
+
+Abbiamo usato il blocco Moving Average per pulire il segnale dalle oscillazioni ad alta frequenza (ripple) per leggere il valore medio a regime.
+
+Ripetiamo poi l'intera simulazione modificando (come abbiamo fatto all'inizio, dallo script Matlab)  `Trotor=70;` e `Tphase=90;`.
 
 ---
 
