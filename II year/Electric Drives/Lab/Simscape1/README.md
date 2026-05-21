@@ -52,7 +52,7 @@ Quindi:
 
 <img width="750" height="400" alt="image" src="https://github.com/user-attachments/assets/7f4ca0a5-7c5e-473b-b6b3-81b85e418b8b" />
 
-In questo caso facciamo $(700-314)/ 2 \pi$ perché avevamo già 314 all'istante iniziale e dobbiamo aggiungere solo i restanti per arrivate come velocità totale a 700.
+In questo caso facciamo $(700-314) 60 / 2 \pi$ perché avevamo già 314 all'istante iniziale e dobbiamo aggiungere solo i restanti per arrivate come velocità totale a 700.
 
 Modifichiamo poi la coppia di carica lavorando su questo blocco:
 
@@ -139,7 +139,30 @@ Per $\psi_{PM}$ prendiamo sempre un blocco constant è sciviamo Psim è lo molti
 
 perché dipende varia con la temperatura.
 
+Il prossimo passo è calcolare:
+- __potenza attiva__ (potenza eletrica in ingresso): $P_{in} = \frac{3}{2} (v_{sd}i_{sd} + v_{sq}i_{sq}$
+- __perdite elettriche__ $P_{joule} = \frac{3}{2} (i_{sd}^2 + i_{sq}^2)$
+- __potenza meccanica__ $P_m = Kc i_{sq} \omega_r / n_p$
 
+Lo si può fare tramite codice Matlab come segue:
+```
+Pm = Kc * IqMis_no_err * wRotor / np;
+P_joule =;
+P_in =;
+Verifica = P_in - P_joule;
+```
+
+Per il calcolo dell'efficienza $\eta = P_{out} / P_{in}$ abbiamo bisogno di calcolare la _potenza meccanica in uscita_ come $P = C_r \omega_r / n_p$.
+
+Oppure il rendimento può essere espresso direttamente come:
+$$
+\eta = \frac{\omega_r (K_c i_{sq} - B \omega_r /n_p)/n_p}{K_c i_sq \omega_r / n_p + \frac{3}{2} R_s (i_{sd}^2 + i_{sq}^2}
+$$
+Quindi:
+```
+P_out = Cr * (wr /np);
+Efficienza = P_out / P_in;
+```
 
 ---
 
