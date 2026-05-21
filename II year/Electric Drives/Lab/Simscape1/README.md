@@ -155,9 +155,11 @@ Verifica = P_in - P_joule;
 Per il calcolo dell'efficienza $\eta = P_{out} / P_{in}$ abbiamo bisogno di calcolare la _potenza meccanica in uscita_ come $P = C_r \omega_r / n_p$.
 
 Oppure il rendimento può essere espresso direttamente come:
+
 $$
 \eta = \frac{\omega_r (K_c i_{sq} - B \omega_r /n_p)/n_p}{K_c i_sq \omega_r / n_p + \frac{3}{2} R_s (i_{sd}^2 + i_{sq}^2}
 $$
+
 Quindi:
 ```
 P_out = Cr * (wr /np);
