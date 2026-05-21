@@ -40,7 +40,7 @@ Impostiamo il riferimento di velocità ($t = 0$ a 314) dal Simulink, dal blocco:
 
 andiamo a modificare il grandino esistente come segue:
 
-<img width="700" height="300" alt="image" src="https://github.com/user-attachments/assets/be146c9e-0d5a-40f1-96ea-13637b349930" />
+<img width="750" height="400" alt="image" src="https://github.com/user-attachments/assets/be146c9e-0d5a-40f1-96ea-13637b349930" />
 
 il valore viene moltiplicato per $60/2 \pi$ perché è riportato da rad/sec in RPM.
 
@@ -50,7 +50,7 @@ Aggiungiamo poi un ulteriore blocco Step per rappresentare il riferimento ($t = 
 
 Quindi:
 
-<img width="600" height="300" alt="image" src="https://github.com/user-attachments/assets/7f4ca0a5-7c5e-473b-b6b3-81b85e418b8b" />
+<img width="750" height="400" alt="image" src="https://github.com/user-attachments/assets/7f4ca0a5-7c5e-473b-b6b3-81b85e418b8b" />
 
 In questo caso facciamo $(700-314)/ 2 \pi$ perché avevamo già 314 all'istante iniziale e dobbiamo aggiungere solo i restanti per arrivate come velocità totale a 700.
 
