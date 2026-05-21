@@ -157,7 +157,7 @@ Per il calcolo dell'efficienza $\eta = P_{out} / P_{in}$ abbiamo bisogno di calc
 Oppure il rendimento può essere espresso direttamente come:
 
 $$
-\eta = \frac{\omega_r (K_c i_{sq} - B \omega_r /n_p)/n_p}{K_c i_sq \omega_r / n_p + \frac{3}{2} R_s (i_{sd}^2 + i_{sq}^2}
+\eta = \frac{\omega_r (K_c i_{sq} - B \omega_r /n_p)/n_p}{K_c i_sq \omega_r / n_p + \frac{3}{2} R_s (i_{sd}^2 + i_{sq}^2)}
 $$
 
 Quindi:
