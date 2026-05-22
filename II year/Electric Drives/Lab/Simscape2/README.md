@@ -10,4 +10,4 @@ Effettuare una simulazione senza disaccoppiamento a 6000 rpm $C_r = \frac{2}{4} 
 
 ---
 
-## Soluzione 2
+## Soluzione
