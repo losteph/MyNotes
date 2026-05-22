@@ -24,7 +24,7 @@ Calcolare l'efficienza (potenza meccanica trasferita al carico diviso la potenza
 
 ---
 
-## Svolgimento 1
+## Svolgimento
 
 Dopo aver scaricato tutti i file, servirà aprire solamente `Script_caricamento_dati_simscape1.m` e `Simscape1.mdl`.
 
