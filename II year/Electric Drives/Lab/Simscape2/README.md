@@ -11,3 +11,11 @@ Effettuare una simulazione senza disaccoppiamento a 6000 rpm $C_r = \frac{2}{4} 
 ---
 
 ## Soluzione
+
+Dallo script Matlab impostiamo `tend = 0.65`, che sarà poi messo in alto in Simulink come Stop Time della simulazione:
+
+<img width="400" height="100" alt="image" src="https://github.com/user-attachments/assets/8d959478-1435-40b2-ae3c-7bae1864eca5" />
+
+Riprendendo i casi precedenti, dal simulink impostiamo wr che parte a t=0.00 di 314rad/s (trasformato in RPM), ed il carico che parte a t=0.12 ed è di 0.2Nm (come abbiao fatto per Simscape1). Adesso però dobbiamo aggiungere un blocco in cui sottraiamo un altri due Step, uno a t=0.40 che sottraga il carico di 0.2Nm e l'altro che spenga la macchina a t=0.45.
+
+
