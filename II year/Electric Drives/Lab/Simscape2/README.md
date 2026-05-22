@@ -16,6 +16,6 @@ Dallo script Matlab impostiamo `tend = 0.65`, che sarà poi messo in alto in Sim
 
 <img width="400" height="100" alt="image" src="https://github.com/user-attachments/assets/8d959478-1435-40b2-ae3c-7bae1864eca5" />
 
-Riprendendo i casi precedenti, dal simulink impostiamo wr che parte a t=0.00 di 314rad/s (trasformato in RPM), ed il carico che parte a t=0.12 ed è di 0.2Nm (come abbiao fatto per Simscape1). Adesso però dobbiamo aggiungere un blocco in cui sottraiamo un altri due Step, uno a t=0.40 che sottraga il carico di 0.2Nm e l'altro che spenga la macchina a t=0.45.
+Riprendendo i casi precedenti (Simscape1), dal simulink impostiamo wr che parte a t=0.00 di 314rad/s (trasformato in RPM), ed il carico che parte a t=0.12 ed è di 0.2Nm. Adesso però dobbiamo aggiungere un blocco sommatore (modificato di segni) in cui sottraiamo due Step, uno a t=0.40 che tolga il carico di 0.2Nm e l'altro che spenga la macchina a t=0.45.
 
 
