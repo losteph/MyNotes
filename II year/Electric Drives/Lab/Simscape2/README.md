@@ -38,8 +38,10 @@ Nello specifico dobiamo modificare nella sezione Inner Loop:
 
 <img width="753" height="977" alt="image" src="https://github.com/user-attachments/assets/1a0c0b77-9bf7-4fd7-94dd-9849e6c5a52c" />
 
-i valori di Lsd, Lsq e Psim:
+i valori di Lsd, Lsq e Psim nelle tre simulazioni:
 
 1) Lascio tutto come sta nella foto
 2) Moltiplico per 0.8 Lsd
-3) Imposto tutti e 3 i parametri a zero 
+3) Imposto tutti e 3 i parametri a zero
+
+Questa esercitazione serve a dimostrare che a basse velocità il disaccoppiamento si può anche omettere, ma ad alte velocità (come i 6000 rpm della simulazione) è obbligatorio, altrimenti il controllo perde stabilità e l'efficienza del motore crolla a causa delle enormi perdite per effetto Joule generate dalle correnti parassite d'asse d.
