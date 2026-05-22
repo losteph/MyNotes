@@ -1,8 +1,4 @@
-# Simscape
-
----
-
-## Traccia 1
+# Simscape1
 
 Effettuare la simulazione per:
 * t = 0.00 sec (impostando il riferimento di velocità a 314 rad/s)
@@ -160,19 +156,3 @@ Abbiamo usato i blocchi: product, divide, square, constant, gain, from, sum, per
 Abbiamo usato il blocco Moving Average per pulire il segnale dalle oscillazioni ad alta frequenza (ripple) per leggere il valore medio a regime.
 
 Ripetiamo poi l'intera simulazione modificando (come abbiamo fatto all'inizio, dallo script Matlab)  `Trotor=70;` e `Tphase=90;`.
-
----
-
-## Esercitazion 2
-
-Modificare la simulazione imponendo che il carico venga interrotto a 0.40 sec e che la macchina si fermi a 0.45 sec, con durata della simulazione 0.65 sec.
-
-Effettuare una simulazione con disaccoppiamento perfetto a 6000 rpm e $C_r = \frac{2}{4} \dot C_{rn}$ a 100°C. Calcolare l'energia totale dissipata per effetto Joule. Calcolare l'energia che verrebbe dissipata per un ciclo di lavoro di 1 ora.
-
-Effettuare una simulazione con disaccoppiamento imperfetto ($80% \cdot Lsd$) a 6000 rpm e $C_r = \frac{2}{4} \dot C_{rn}$ a 100°C. Calcolare l'energia totale dissipata per effetto Joule. Calcolare l'energia che verrebbe dissipata per un ciclo lavorativo di 1 ora.
-
-Effettuare una simulazione senza disaccoppiamento a 6000 rpm $C_r = \frac{2}{4} \dot C_{rn}$ a 100°C. Calcolare l'energia totale dissipata per effetto Joule. Calcolare l'energia che verrebbe dissipata per un ciclo lavorativo di 1 ora.
-
----
-
-## Soluzione 2
