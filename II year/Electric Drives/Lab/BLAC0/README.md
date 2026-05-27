@@ -137,10 +137,10 @@ Ottenendo quindi il grafico corretto:
 <img width="717" height="431" alt="image" src="https://github.com/user-attachments/assets/99c02dc9-4c72-4cab-a97a-8a6bd324706a" />
 
 
-- Calcoliamo analiticamente che coppia viene prodotta a regime dal motore lasciando inalterato il controllore.
+- Calcoliamo analiticamente che coppia viene prodotta a regime dal motore lasciando inalterato il controllore. `Ce_errata = Kc*(Ce/Kc-0.5/Rs);`
 
-- Verifichiamo il calcolo con la simulazione
+- Verifichiamo il calcolo con la simulazione (Ce* e Ce la coppia desiderata non è più 0.6 ma sarà 0.5)
 
-- Ridisegnare il controllore per ottenere a regime la coppia desiderata
+- Ridisegnare il controllore per ottenere a regime la coppia desiderata allora aggiungimo una constant di 0.5 al controllore per bilanciare
 
-- Verificare il nuovo design con la simulazione
+- Verificare il nuovo design con la simulazione (otteniamo di nuovo 0.6).
