@@ -21,7 +21,7 @@ Osserviamo che il riferimento di velocità è applicato all'istante t = 0s mentr
 Per aumentare aggiungiamo uno step che parte a 0.05s che assume valore `Crn*Rs/Kc`.
   
 
-3) Osservando la velocità effettiva notiamo che persiste un lieve scostamento dalla velocità di riferimento, dovuto *alle perdite per attrito e ventilazione*: $B (\omega_r / n_p)$; allora dobbiamo incrementare ancora la vsq' di `(B*wrr*Rs)/(np*Kc)` per raggiungere precisamente il riferimento di velocità (sommando un altro blocco step oppure al blocco di prima sommiamo quel contributo).
+3) Osservando la velocità effettiva notiamo che persiste un lieve scostamento dalla velocità di riferimento, dovuto *alle perdite per attrito e ventilazione*: $B (\omega_r / n_p)$; allora dobbiamo incrementare ancora la vsq' di `(B*wrr*Rs)/(np*Kc)` per raggiungere precisamente il riferimento di velocità (aggiungendo un altro blocco step oppure al blocco di prima sommando quel contributo).
 
 <img width="685" height="535" alt="image" src="https://github.com/user-attachments/assets/80d313bf-2cdf-4e79-ad9e-073404c1be7e" />
 
