@@ -26,7 +26,20 @@ Per aumentare aggiungiamo uno step che parte a 0.05s che assume valore `Crn*Rs/K
 
 abbiamo aggiunto al codice questa parte:
 ```
+% Calcolo della media su intervalli di campioni
+vsq1_vuoto = mean(vsq1.Data(300:400));
+vsq1_carico = mean(vsq1.Data(700:1000));
+w0_vuoto=vsq1_vuoto/PSIPM;
+w0_carico=vsq1_carico/PSIPM;
+w_vuoto=0:w0_vuoto;
+w_carico=0:w0_carico;
+Ce_vuoto= Kc/Rs*PSIPM*(w0_vuoto-w_vuoto);
+Ce_carico= Kc/Rs*PSIPM*(w0_carico-w_carico);
 
+figure(3), hold on;
+plot(w_vuoto,Ce_vuoto)
+plot(w_carico,Ce_carico)
+plot(wr.Data,Ce.Data)
 ```
 
 5) Per calcolare analiticamente la velocità che verrebbe raggiunta a regime se la resistenza stimata fosse il 120% di quella reale del motore (dopo aver compensato le perdite di attrito e ventilazione), abbiamo:
