@@ -134,6 +134,8 @@ Ottenendo quindi il grafico corretto:
 
 - Modifichiamo il modello del convertitore introducendo un errore di attuazione di -0.5V sulla tensione di asse q. Aggiungendo nell'inverter i blocchi come è fatto nel Simulink (invece di essere unitario come di base quello ideale considerato prima).
 
+<img width="717" height="431" alt="image" src="https://github.com/user-attachments/assets/99c02dc9-4c72-4cab-a97a-8a6bd324706a" />
+
 
 - Calcoliamo analiticamente che coppia viene prodotta a regime dal motore lasciando inalterato il controllore.
 
