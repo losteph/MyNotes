@@ -141,6 +141,12 @@ Ottenendo quindi il grafico corretto:
 
 - Verifichiamo il calcolo con la simulazione (Ce* e Ce la coppia desiderata non è più 0.6 ma sarà 0.5)
 
+<img width="521" height="451" alt="image" src="https://github.com/user-attachments/assets/c8c933f3-5c7c-410b-8058-9d1f45d7e4e8" />
+
 - Ridisegnare il controllore per ottenere a regime la coppia desiderata allora aggiungimo una constant di 0.5 al controllore per bilanciare
 
+<img width="938" height="656" alt="image" src="https://github.com/user-attachments/assets/b6223e0a-5f01-49ab-8715-b6433048bd95" />
+
 - Verificare il nuovo design con la simulazione (otteniamo di nuovo 0.6).
+
+<img width="449" height="455" alt="image" src="https://github.com/user-attachments/assets/48f299b7-5da5-4199-9d41-890c23c5e59e" />
