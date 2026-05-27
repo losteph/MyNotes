@@ -70,8 +70,69 @@ Lo schema a blocchi è stato realizzato da zero in classe copiando quello nel pd
 
 Verifichiamo che i grafici ottenuti sono simili a quelli del prof.
 
+<img width="694" height="511" alt="image" src="https://github.com/user-attachments/assets/cafb850f-507f-40af-bd8e-c013b933ed7e" />
 
-- Modifichiamo il modello del convertitore introducendo un errore di attuazione di -0.5V sulla tensione di asse q.
+Con questo schema Simulink non funziona ed esce sbagliato il grafico, rispetto a quello che dovrebbe essere. Esce così:
+
+<img width="1554" height="911" alt="image" src="https://github.com/user-attachments/assets/245d20b0-9444-429c-8ef5-70750fe4dd7b" />
+
+Quindi ho implementato il tutto tramite codice:
+```
+%% Controllo di coppia (terzo grafico)
+
+% 1. Definizione delle Variabili (Assumendo che siano vettori)
+% I blocchi 'To Workspace' salvano i dati come strutture timeseries (spesso con nome 'variabile.Data').
+% Se i tuoi dati sono salvati direttamente come array (es. nome_variabile.Data),
+% devi accedere solo alla parte numerica. Esempio:
+% Ce_data = Ce.Data; 
+% Cr_data = Cr.Data;
+% wr_data = wr.Data;
+Ce = out.Ce.Data;
+Cr = out.Cr.Data;
+wr = out.wr.Data;
+
+% *** N.B.: Se i tuoi dati sono già nel Workspace come array di tipo double, usa direttamente i loro nomi (Ce, Cr, wr). ***
+
+% 2. Calcolo dei componenti del Carico (se non calcolati in Simulink)
+% Assumendo che 'B', 'np', e l'attrito costante siano definiti nel Workspace
+% (Adattare questa parte al tuo modello specifico!)
+B_attrito = B / np; % Carico viscoso normalizzato B/np [cite: 221] 
+Carico_viscoso = B_attrito * wr; % B*wr/np
+
+% 3. Creazione del Grafico (Coppia/Carico vs. Velocità)
+figure; % Apre una nuova finestra grafica
+
+% Plot della Coppia Elettromagnetica (Ce) vs. Velocità (wr)
+plot(wr, Ce, 'b', 'DisplayName', 'Ce'); 
+hold on; % Mantiene il grafico per aggiungere altre curve
+
+% Plot del Carico Totale (Cr) vs. Velocità (wr)
+plot(wr, Cr, 'r', 'DisplayName', 'Cr');
+
+% Plot del Carico Viscoso B*wr/np vs. Velocità (wr)
+plot(wr, Carico_viscoso, 'g', 'DisplayName', 'B*wr/np');
+
+% Calcolo e Plot del Carico Totale (Ce + Attrito Viscoso) vs. Velocità
+% Questo dipende dal modo in cui il tuo Carico Totale è definito nel modello!
+% Se nel tuo modello il carico totale è C_tot = Cr + B*wr/np (o simile):
+C_tot = Cr + Carico_viscoso; 
+plot(wr, C_tot, 'k', 'DisplayName', 'Cr + B*wr/np'); 
+
+% 4. Formattazione e Legenda
+xlabel('Electric Speed [rad/s]');
+ylabel('Electromagnetic torque and load torque [Nm]');
+title('BLAC Motor Torque and Load vs Speed');
+legend('show', 'Location', 'SouthEast');
+grid on;
+hold off;
+```
+
+Ottenendo quindi il grafico corretto:
+
+<img width="1124" height="634" alt="image" src="https://github.com/user-attachments/assets/269ddaff-6087-4e50-b92a-8c49660d0b57" />
+
+
+- Modifichiamo il modello del convertitore introducendo un errore di attuazione di -0.5V sulla tensione di asse q. Aggiungendo nell'inverter i blocchi come è fatto nel Simulink (invece di essere unitario come di base quello ideale considerato prima).
 
 
 - Calcoliamo analiticamente che coppia viene prodotta a regime dal motore lasciando inalterato il controllore.
