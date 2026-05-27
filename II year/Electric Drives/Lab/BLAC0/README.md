@@ -46,8 +46,14 @@ plot(wr.Data,Ce.Data)
 
 5) Per calcolare analiticamente la velocità che verrebbe raggiunta a regime se la resistenza stimata fosse il 120% di quella reale del motore (dopo aver compensato le perdite di attrito e ventilazione), abbiamo:
 ```
-
+wr1 = wrr+ 0.2*(Rs*(Crn+B*wr/np))/(Kc*PSIPM);
+delta = wr1 - wrr;
 ```
+
+Dal simulink poi abbiamo fatto così:
+
+<img width="935" height="500" alt="image" src="https://github.com/user-attachments/assets/07ec2a35-514d-497c-ae51-8dbd7e7e84c1" />
+
 
 ---
 
