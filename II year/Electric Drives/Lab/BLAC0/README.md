@@ -66,4 +66,18 @@ Ouppure analogamente dal Simulink creando questo schema:
 
 ## Controllo di coppia
 
-Lo schema a blocchi è stato realizzato da zero in classe copiando quello in figura ed allegato come `BLAC0_coppia.slx`
+Lo schema a blocchi è stato realizzato da zero in classe copiando quello nel pdf ed allegato come `BLAC0_coppia.slx`
+
+Verifichiamo che i grafici ottenuti sono simili a quelli del prof.
+
+
+- Modifichiamo il modello del convertitore introducendo un errore di attuazione di -0.5V sulla tensione di asse q.
+
+
+- Calcoliamo analiticamente che coppia viene prodotta a regime dal motore lasciando inalterato il controllore.
+
+- Verifichiamo il calcolo con la simulazione
+
+- Ridisegnare il controllore per ottenere a regime la coppia desiderata
+
+- Verificare il nuovo design con la simulazione
