@@ -1,6 +1,6 @@
 # BLAC 0
 
-La traccia è presente nel file `BLAC0.pdf`. I file da caricare (Load Data) sono nel file `Dati0.m`, runnare quel file Matlab prima di aprire i relativi file Simulink.
+La traccia è presente nel file `BLAC0.pdf`. I file da caricare (Load Data) sono nel file `Dati0_1.m`, runnare quel file Matlab prima di aprire i relativi file Simulink.
 
 ---
 
@@ -22,6 +22,8 @@ Per aumentare aggiungiamo uno step che parte a 0.05s che assume valore `Crn*Rs/K
 3) Osservando la velocità effettiva notiamo che persiste un lieve scostamento dalla velocità di riferimento, dovuto *alle perdite per attrito e ventilazione*: $B (\omega_r / n_p)$; allora dobbiamo incrementare ancora la vsq' di `(B*wrr*Rs)/(np*Kc)` per raggiungere precisamente il riferimento di velocità (sommando un altro blocco step oppure al blocco di prima sommiamo quel contributo).
 
 4) La caratteristica meccanica confrontata con la traiettoria coppia-velocità ottenuta nella simulazione con carico ed a vuoto è:
+
+<img width="1000" height="690" alt="blac0fig4" src="https://github.com/user-attachments/assets/3c6358b3-e749-4a17-8566-f232faa2c7a6" />
 
 
 abbiamo aggiunto al codice questa parte:
