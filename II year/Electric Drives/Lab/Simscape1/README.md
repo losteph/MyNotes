@@ -136,7 +136,7 @@ Per $\psi_{PM}$ prendiamo sempre un blocco constant è sciviamo Psim è lo molti
 perché dipende varia con la temperatura.
 
 Il prossimo passo è calcolare:
-- __potenza attiva__ (potenza eletrica in ingresso): $P_{in} = \frac{3}{2} (v_{sd}i_{sd} + v_{sq}i_{sq}$
+- __potenza attiva__ (potenza eletrica in ingresso): $P_{in} = \frac{3}{2} (v_{sd}i_{sd} + v_{sq}i_{sq})$
 - __perdite elettriche__ $P_{joule} = \frac{3}{2} (i_{sd}^2 + i_{sq}^2)$
 - __potenza meccanica__ $P_m = Kc i_{sq} \omega_r / n_p$
 - _L'efficienza elettrica_ (rendimento della conversione elettromeccanica dell'energia) $\eta_ele = P_{out} / P_{in}$ 
