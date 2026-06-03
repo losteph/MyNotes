@@ -27,4 +27,15 @@ Ripetendo la simulazione in assenza di coppia di carico durante l'avviamento (im
 <img width="1391" height="492" alt="image" src="https://github.com/user-attachments/assets/ae6bd5bc-6ff6-4a2b-88a4-78236b279bef" />
 
 
-2) Rimuoviamo dal diagramma a blocchi il regolatore di velocità ed utilizziamo un gradino di ampiezza pari a `0.6*kf` applicato nell'istante t=0 per generare il riferimento di corrente secondo l'asse q. Realizziamo le simulazioni del controllo di corrente in assenza di coppia di carico.
+2) Rimuoviamo dal diagramma a blocchi il regolatore di velocità ed utilizziamo un gradino di ampiezza pari a `0.6*kf` applicato nell'istante t=0 per generare il riferimento di corrente secondo l'asse q. Realizziamo le simulazioni del controllo di corrente in assenza di coppia di carico. Il regolatore di corrente deve essere in accordo con le seguenti specifiche:
+
+   -  usare il Criterio del Modulo Ottimo
+   -  ottenendo una risposta al gradino sovrasmorzata con tempo di assestamento pari a circa 0.01s
+   -  imponendo un margine di fase di 65° ed una larghezza di banda pari a 500 [rad/s] e poi 830 [rad/s].
+
+Per risolvere questo esercizio consideriamo un modello equivalente del primo ordine del plant, ottenuto trascurando le costanti di tempo elettroniche ed introducendo un'unica costante di tempo equivalente data dalla somma di tutte le costanti di tempo: `tsigmai = 4*tA+tf+(Lsq/Rs);`
+
+Consideriamo poi come f.d.t. del plant: `Gplant = tf(kf/Rs, [(tsignmai*Lsq/Rs) (tsigmai+Lsq/Rs) 1])`
+
+Riportiamo i grafici per evidenziare il raggiungimento della specifica di progetto.
+
