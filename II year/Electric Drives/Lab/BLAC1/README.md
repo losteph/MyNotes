@@ -39,3 +39,5 @@ Consideriamo poi come f.d.t. del plant: `Gplant = tf(kf/Rs, [(tsignmai*Lsq/Rs) (
 
 Riportiamo i grafici per evidenziare il raggiungimento della specifica di progetto.
 
+<img width="1075" height="619" alt="image" src="https://github.com/user-attachments/assets/250ad2fa-6b9a-4cce-805b-956b8d1980a1" />
+
