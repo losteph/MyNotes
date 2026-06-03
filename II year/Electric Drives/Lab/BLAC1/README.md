@@ -41,3 +41,30 @@ Riportiamo i grafici per evidenziare il raggiungimento della specifica di proget
 
 <img width="1075" height="619" alt="image" src="https://github.com/user-attachments/assets/250ad2fa-6b9a-4cce-805b-956b8d1980a1" />
 
+I primi due punti sono già risolti tramite script matlab rispettivamente scommentando (e commentando l'altro) la sezione sotto a `%progetto 1` o `%progetto 2`.
+
+Per l'altro sul margine di fase aggiungiamo lo script:
+```Matlab
+%Progetto 3
+tsigmai=4*tA+tauf;
+wbp = 500;
+PM = 65;
+wcr = wbp;
+
+Gp = tf(kf/Rs, [(tsigmai*Lsq/Rs) (tsigmai+Lsq/Rs) 1]);
+[amp, fase] = bode(Gp, wcr);
+
+kpisq = cosd(-180+PM-fase)/amp;
+kiisq = -wcr*sind(-180+PM-fase)/amp;
+tiisq = kpisq/kiisq;
+
+Gc = tf([kpisq kiisq], [1 0]);
+
+figure(1)
+margin(Gp);
+grid on;
+
+figure(2)
+bode(Gp*Gc/(Gp*Gc+1));
+grid on;
+```
