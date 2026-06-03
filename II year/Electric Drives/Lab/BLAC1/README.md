@@ -17,7 +17,12 @@ Le figure per evidenziare l'andamento della velocità e delle correnti durante l
 
 <img width="1396" height="499" alt="image" src="https://github.com/user-attachments/assets/b330737a-0e4b-4c82-89b9-9f2a970dba0e" />
 
-Ripetendo la simulazione in assenza di coppia di carico durante l'avviamento:
+Il questo caso abbiamo impostato la coppia di carico pari a Crn sia come Inizial value che come Final value.
+
+<img width="569" height="379" alt="image" src="https://github.com/user-attachments/assets/bb754a01-e57c-4786-a171-1c70cb0387f7" />
+
+
+Ripetendo la simulazione in assenza di coppia di carico durante l'avviamento (impostiamo Initial value pari a `Cr0`):
 
 <img width="1391" height="492" alt="image" src="https://github.com/user-attachments/assets/ae6bd5bc-6ff6-4a2b-88a4-78236b279bef" />
 
