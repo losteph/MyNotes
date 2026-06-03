@@ -68,3 +68,17 @@ figure(2)
 bode(Gp*Gc/(Gp*Gc+1));
 grid on;
 ```
+
+---
+
+### Commenti sull'ultimo punto dell'esercitazione (Note di Progetto: Sintesi del Regolatore di Corrente)
+
+#### 1. Analisi in frequenza: `margin` vs `bode`
+* **`bode(L)`**: Traccia esclusivamente l'andamento grafico di modulo e fase.
+* **`margin(L)`**: Oltre a tracciare i grafici, **calcola e stampa a video** i margini di stabilità esatti. È lo strumento ideale per verificare numericamente che il Margine di Fase (PM) e la frequenza di incrocio (w_c) rispettino al millimetro le specifiche richieste.
+
+#### 2. Scelta del Margine di Fase (PM): 90° vs 65°
+* **PM = 90°**: Il guadagno ad anello chiuso a w_c è esattamente **-3 dB** (la frequenza di taglio calcolata coincide perfettamente con la banda passante). *Problema:* Il sistema risulta troppo lento (sovrasmorzato).
+* **PM = 65°**: Il guadagno ad anello chiuso a w_c è **-0.6 dB** (la banda passante reale si trova a frequenze leggermente superiori). È il valore standard negli azionamenti elettrici: garantisce il compromesso perfetto tra **massima prontezza** e **sovraelongazione minima** (~4%). {Corrisponde ad un fattore di smorzamento di circa 0.7}.
+
+Sappiamo che con MF pari a 90° avremmo in prossimità della frequenza $w_{bp}$ scelta (che corrisponderà anche a quella di crossover) un guadagno di -3dB. Quando il MF è 65° essendo $w_c < w_{bp}$ leggeremo ad un valore superiore a 500 rad/s il guadagno di -3dB (dall'esempio mio sembra essere 200 rad/s più a destra).
