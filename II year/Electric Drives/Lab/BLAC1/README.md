@@ -7,7 +7,7 @@ Lasciando il circuito inalterato (aprendo `BLAC_1.mdl`) otteniamo i seguenti gra
 <img width="1399" height="500" alt="image" src="https://github.com/user-attachments/assets/c5b30e49-68ba-4535-b57a-c31233d5748d" />
 
 
-1) Al posto del riferimento di velocità a gradino ed il filtro di smoothing mettiamo un riferimento a rampa (a pendenza limitata), sta svolto in `BLAC1_1.mdl`. Scegliamo la pendenza del riferimento (slope del blocco Ramp) in modo da garantire che la corrente durante il transitorio di velocità sia contenuta entro due volte la corrente nominale (anche durante un avviamento con coppia di carico nominale). La corrente deve mantenersi entro 2 volte la corrente nominale $i_{qn} = 1 [A]$ (quindi $i_q_{MAX} = 2$ durante la fase di accelerazione, sono ammessi valori anche maggiori durante il transitorio iniziale della corrente, perché è di breve durata).
+1) Al posto del riferimento di velocità a gradino ed il filtro di smoothing mettiamo un riferimento a rampa (a pendenza limitata), sta svolto in `BLAC1_1.mdl`. Scegliamo la pendenza del riferimento (slope del blocco Ramp) in modo da garantire che la corrente durante il transitorio di velocità sia contenuta entro due volte la corrente nominale (anche durante un avviamento con coppia di carico nominale). La corrente deve mantenersi entro 2 volte la corrente nominale $i_{qn} = 1 [A]$ (quindi $i_{qMAX} = 2$ durante la fase di accelerazione, sono ammessi valori anche maggiori durante il transitorio iniziale della corrente, perché è di breve durata).
 
 <img width="431" height="233" alt="image" src="https://github.com/user-attachments/assets/fad23fc0-5491-4fe8-9b41-aadfbb08a5ec" />
 
