@@ -15,6 +15,9 @@ Lo *slope* è esattamente la massima accelerazione di avviamento. Per verificarl
 - impostando una pendenza dolce (500) il motore insegue la rampa con oscillazioni più piccole ed un comportamento più stabile.
 <img width="1080" height="792" alt="image" src="https://github.com/user-attachments/assets/1d6594a3-37af-4570-9afd-960bbbd5b4f0" />
 
+Abbiamo inoltre plottato l'angolo di carico (differenza tra la posizione elettrica generata dall'integratore e quella reale del motore). Affinche il motore rimanga agganciato $\delta$ non deve superare i 90° elettrici ($\pi/2$ rad).
+<img width="722" height="442" alt="image" src="https://github.com/user-attachments/assets/74337494-1878-4dd7-9cae-a790ea06cdac" />
+(Se con lo slope a 914 l'angolo di carico sfiora i 90° senza superarli abbiamo dimostrato correttamente).
 
 2) Imponendo una corrente di 0.8A e riferimento di velocità nullo. Impostando una coppia di carico che passa da 0 a 0.3Nm da 0.1s a 0.4s. Determinare analiticamente che corrente di asse q ed asse d assorbe il motore a regime. Verificare il calcolo mediante simulazione.
 
