@@ -77,5 +77,17 @@ tsm=tsigmaw*4*1.2;
 
 %Esercizio 1
 I = 0.8;
-max_speed_el = wrr*2*pi/60*np; % elettrica [rad/s] (per avere la meccanica non si moltiplica per np)
-slope = (Kc*I-B*max_speed_el-Cr0)*np/J;
+%max_speed_el = wrr*2*pi/60*np; % elettrica [rad/s] (per avere la meccanica non si moltiplica per np)
+%slope = (Kc*I-B*max_speed_el-Cr0)*np/J;
+
+%Esercizio 2
+Cr = 0.3;
+max_speed = 0;
+isq = Cr/Kc;
+isd = sqrt(I^2-isq^2);
+
+%Esercizio 3
+I = 0.8;
+wr = 200;
+max_speed_el = wr*2*pi/60*np; % elettrica [rad/s] (per avere la meccanica non si moltiplica per np)
+slope = (Kc*I-B*max_speed_el-Cr)*np/J;
