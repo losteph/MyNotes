@@ -1,21 +1,35 @@
 # Calibrazione Sensore e Identificazione Parametri Meccanici PMSM
 
 
-## file 7 brescia, prova 1
+## file 7, prova 1 
 
-rec1_458
+Si configura l'azionamento per effettuare un controllo di velocità in anello chiuso, in assenza di carico.
 
-abbiamo preso in partena velocità da 0 a 50 poi 100 poi 150 poi 300 poi 400 e poi 600.
+Nel file `rec1_458.mat` stanno i dati della prova. Abbiamo preso (N = 7) velocità di riferimento alla quale controllare il motore (0, 50, 100, 150, 300, 400, 600).
 
-(perché sono negative? anche le correnti? ruota in verso opposto? costruzione azionamento? non ricordo che è passato molo dall'esercitazione). Da rivedere.
+Dal file dei dati della prova notiamo che la Velocità rotorica è `Y(16)`, corrente di asse q `Y(14)`, `X` il tempo. Estraiamo quindi i valor medi di questi vettori. 
 
-Velocità rotorica Y(16), corrente di asse q Y(14), X il tempo.
+Sapendo di essere a regime ed in assenza di carico, ed avendo a disposizione una stima di Kc, possiamo ottenere una stima di B e Cd applicando il metodo dei minimi quadrati.
 
-dobbiamo calcolarci (con il metodo dei minimi quadrati?) il vettore dei parametri theta per ottenere una stima di B e Cd.
+$$
+K_c i_{qj} - B \omega_{rj} / n_p - C_d = 0
+$$
+nel nostro caso non dividiamo la velocità per il numero di coppie polari perché la velocità che abbiamo è già quella meccanica.
+$$
+y = \Phi \theta
+$$
+```
+y = [Kc*iq1; Kc*iq2; ...; Kc*iqN];
+phi = [wr1, 1; wr2, 1; ...; wrN, 1];
+theta = [B; Cd]
+```
+$$
+\theta = (\Phi^T \Phi)^{-1} \Phi^T y = [B; C_d]
+$$
 
 ## file 7 brescia, prova 2
 
-rec1_459
+`rec1_459.mat`
 
 iq Y(12) e w_out Y(2) ed X sempre il tempo.
 
