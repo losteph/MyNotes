@@ -59,4 +59,12 @@ Possiamo quindi stimare J con la formula precedente.
 
 ## file 6
 
-relativamente a questa esercitazione può essere utile fare qualcosa???
+Di questa esercitazione non ho il file matlab, perché l'abbiamo simulata in laboratorio ed abbiamo scritto i dati ed i calcoli semplicemente su un foglio.
+
+Quando l'asse d del rotore di un PMSM è allineato con l'asse della fase A di statore, il trasduttore di posizione fornisce un angolo meccanico che moltiplicato per il numero di coppie polari sia 0° (o multiplo di 360°) idealmente.
+
+Questa condizione in fase di installazione del trasduttore è difficile da garantire. Anche durante il funzonamento del motore, a causa delle vibrazioni o accelerazioni/decellerazioni elevati potrebbero verificarsi slittamenti tra il rotore e la parte rotante del trasduttore di posizione.
+
+Ci sarà quindi un errore di misura statico, detto offset. La misura dell'angolo elettrico non compensata pertanto è $ \theta_{rm} ) \theta_r + \theta_{offset}$.
+
+
