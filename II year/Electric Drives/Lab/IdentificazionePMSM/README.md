@@ -36,19 +36,25 @@ Per questo secondo test abbiamo configurato l'azionamento per fare un controllo 
 Nel file .mat è stata registrata la velocita misurata durante tutto il transitorio di decellerazione.
 
 Vogliamo determinare una stima del momento di inerzia. Analizziamo l'equazione:
+
 $$
 J = - \frac{B \omega_r + C_d n_p}{\frac{d \omega_r}{dt}}
 $$
+
 Dobbiamo selezionare però un punto preciso sulla curva per ottenere il valore di wr e la sua derivata (questo è preso in un istante in cui la isq è già nulla e la velocità è ancora elevata). Una volta selezionato il punto all'istante `t` si individuao due punti vicini tale che $t-t_1 = t_2- t$ (abbiamo sommato e sottratto a t un intervallo breve --> 0.01). Questi punti infatti devono essere vicini (er poter considerare costante la pendenza della velocità nell'intervallo di tempo delimitato da essi).
 
 Calcoliamo quindi, la velocità media:
+
 $$
 \omega_r = \frac{\omega_r(t_2)+\omega_r(t1)}{2}
 $$
+
 approssimiamo poi la derivata con la pendenza media della curva nell'intervallo (t1, t2):
+
 $$
 \frac{d \omega_r}{dt}|_t = \frac{\omega_r(t_2) - \omega_r(t_1)}{t_2 - t_1}
 $$
+
 Possiamo quindi stimare J con la formula precedente.
 
 ## file 6
