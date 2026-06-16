@@ -81,4 +81,28 @@ Fossimo in grado di allineare perfettamente l'asse d con quello della fase A ris
 Però allineare il rotore con la fase A non è possibile a causa della presenza di attriti statici e limiti di corrente erogabili dall'inverter.
 }
 
-Si utilizza infati il controllo IF, imponendo un angolo costante $\theta_{IF} = 0$ ed una corrente di asse d pari a I*, si genererebbe un campo magnetico di statore allineato con l'asse della fase A e la seguente coppia di allineamento.
+Si utilizza infati il controllo IF, imponendo un angolo costante $\theta_{IF} = 0$ ed una corrente di asse d pari a I*, si genererebbe un campo magnetico di statore allineato con l'asse della fase A e la seguente coppia di allineamento: $Ce=-K_c I^* sin(\theta_r)$.
+
+Il rotore non riesce ad allinearsi bene con l'asse d ma ci sarà uno scostamento che dipende dai parametri caratteristici del motore e dalla corrente erogata. Si potrebbe auentare la corrente per minimizzare questo scorrimento (se non fosse limitata quella erogata dal convertitore).
+
+Si ricorre quindi alla strategia seguente:
+
+- Si impone inizialmente un angolo $\theta_{IF} > 0$ per far partire il motore *da sinistra* (rispetto all'asse della fase A).
+- Si riduce gradualmente l'angolo fino a raggiungere $\theta_{IF} = 0$ e si registra l'angolo ottenuto in questa condizione:
+
+$$
+\theta ' = \theta_{rm} = \theta_r + \theta_{offset} = - arcsin( \frac{Cs}{Kc I^*}) + \theta_{offset}
+$$
+
+- Si impone poi $\theta_{IF} < 0$  per far partire il motore *da destra* (rispetto all'asse della fase A).
+- Si aumenta gradualmente l'angolo fino a quando $\theta_{IF} = 0$, ottenendo:
+
+$$
+\theta '' = \theta_{rm} = \theta_r + \theta_{offset} = + arcsin( \frac{Cs}{Kc I^*}) + \theta_{offset}
+$$
+
+A questo punto possiamo calcolare l'offset mediando i due dati:
+
+$$
+\theta_{offset} = \frac{\theta ' + \theta ''}{2}
+$$
