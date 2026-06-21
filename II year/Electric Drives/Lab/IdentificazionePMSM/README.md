@@ -65,7 +65,7 @@ Quando l'asse d del rotore di un PMSM è allineato con l'asse della fase A di st
 
 Questa condizione in fase di installazione del trasduttore è difficile da garantire. Anche durante il funzonamento del motore, a causa delle vibrazioni o accelerazioni/decellerazioni elevati potrebbero verificarsi slittamenti tra il rotore e la parte rotante del trasduttore di posizione.
 
-Ci sarà quindi un errore di misura statico, detto offset. La misura dell'angolo elettrico non compensata pertanto è $\theta_{rm} ) \theta_r + \theta_{offset}$.
+Ci sarà quindi un errore di misura statico, detto offset. La misura dell'angolo elettrico non compensata pertanto è $\theta_{rm} = \theta_r + \theta_{offset}$.
 
 Dove:
 - $\theta_r$ è l'angolo elettrico effettivo del rotore (angolo tra asse d e fase A)
