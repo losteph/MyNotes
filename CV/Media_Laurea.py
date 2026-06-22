@@ -8,7 +8,7 @@ esami = [
     {"nome": "Optimization and Control", "voto": 25, "cfu": 6},
     {"nome": "Artificial Intelligence and Machine Learning", "voto": 25, "cfu": 12}, 
     {"nome": "Embedded Control", "voto": 29, "cfu": 6},
-    {"nome": "Electric Drives", "voto": 24, "cfu": 12},
+    {"nome": "Electric Drives", "voto": 25, "cfu": 12},
     {"nome": "Data Model Identification and Intelligent Control", "voto": 28, "cfu": 6},
     {"nome": "Robotics", "voto": 23, "cfu": 12}, #sarebbero 12 cfu ma tolgo i 9cfu più bassi
     {"nome": "Model Predictive Control", "voto": 27, "cfu": 6},
