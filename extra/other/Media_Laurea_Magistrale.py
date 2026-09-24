@@ -10,8 +10,8 @@ esami = [
     {"nome": "Model Predictive Control", "voto": 27, "cfu": 6},
     {"nome": "Data Model Identification and Intelligent Control", "voto": 28, "cfu": 6}, 
     {"nome": "Electric Drives", "voto": 25, "cfu": 12},
-    {"nome": "Embedded Control", "voto": 23, "cfu": 6},
-    {"nome": "Robotics", "voto": 21, "cfu": 3} #sarebbero 12 cfu ma tolgo i 9cfu più bassi   
+    {"nome": "Embedded Control", "voto": 24, "cfu": 6},
+    {"nome": "Robotics", "voto": 23, "cfu": 3} #sarebbero 12 cfu ma tolgo i 9cfu più bassi   
 ]
 
 def media(esami):
