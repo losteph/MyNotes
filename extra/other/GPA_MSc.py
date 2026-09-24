@@ -2,7 +2,7 @@
 # -------------------------------------------------------------
 # Voto IT (/30) | Lettera US | Punti GPA
 # -------------------------------------------------------------
-# 30 e Lode     |     A+     |   4.33
+# 30 e Lode     |     A+     |   4.30
 # 29 - 30       |     A      |   4.00
 # 28            |     A-     |   3.70
 # 26 - 27       |     B+     |   3.30
@@ -16,7 +16,7 @@
 
 
 esami = [
-    {"nome": "Statistical and Mathematical Methods for Machine Learning", "gpa": 4.33, "letter": "A+", "cfu": 6},   
+    {"nome": "Statistical and Mathematical Methods for Machine Learning", "gpa": 4.30, "letter": "A+", "cfu": 6},   
     {"nome": "Digital Business", "gpa": 3.30, "letter": "B+",  "cfu": 6},   
     {"nome": "Distributed Measurementand Data Acquisition Systems", "gpa": 3.70, "letter": "A-", "cfu": 6},  
     {"nome": "Dynamical Systems Theory", "gpa": 3.70, "letter": "A-",  "cfu": 6},   
