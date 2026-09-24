@@ -1,5 +1,5 @@
 # My Notes
-Here you will find all my transcribed notes from the Master's Degree in Cyber-Physical Systems at Politecnico di Bari. 
+Here you will find all my transcribed notes from the Master's Degree in Automation and Robotics at Politecnico di Bari. 
 
 ---
 ### ⚠️ Disclaimer
