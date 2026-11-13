@@ -27,7 +27,7 @@ esami = [
     {"nome": "Data Model Identification", "gpa": 3.70, "letter": "A-",  "cfu": 6},   
     {"nome": "Electric Drives", "gpa": 3.00, "letter": "B", "cfu": 12},   
     {"nome": "Model Predictive Control", "gpa": 3.30, "letter": "B+", "cfu": 6}, 
-    {"nome": "Embedded Control", "gpa": 3.00, "letter": "B",  "cfu": 6},    
+    {"nome": "Embedded Control", "gpa": 4.00, "letter": "A",  "cfu": 6},    
     {"nome": "Robotics", "gpa": 2.70, "letter": "B-",  "cfu": 12}    
 ]
 
